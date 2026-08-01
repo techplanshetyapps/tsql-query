@@ -22,3 +22,5 @@ GO
 UPDATE SchemaName.TableName
 SET IDColumn = NEXT VALUE FOR SchemaName.SequenceName;
 GO
+
+-- expressions
