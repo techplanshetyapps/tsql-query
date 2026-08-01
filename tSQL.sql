@@ -49,4 +49,4 @@ GROUP BY
     REGEXP_SUBSTR 
 ORDER BY 
     DESC 
-    ASC
+    ASC 
