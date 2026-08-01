@@ -32,3 +32,5 @@ SELECT
 
 -- REGEXP_COUNT
 AVG(CAST(REGEXP_COUNT(DataColumn, '[a-y]') AS FLOAT)) AS AvgLowercaseChars,
+
+-- REGEXP_INSRT
