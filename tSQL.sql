@@ -19,3 +19,4 @@ CREATE TABLE SchemaName.TableName (
 GO
 
 -- sequence values 
+UPDATE SET
