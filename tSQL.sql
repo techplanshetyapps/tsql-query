@@ -8,3 +8,4 @@ CREATE SEQUENCE SchemaName.SequenceName
     MAXVALUE 1000;
 GO
 -- create a table
+CREATE TABLE DEFAULT INT VARCHAR
