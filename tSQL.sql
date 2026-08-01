@@ -39,14 +39,15 @@ MAX(REGEXP_INSTR(DataColumn, 'e')) AS FirstLetterPos
 -- subquery
 FROM (
     SELECT 
-        ReferenceID 
-        ColumnName 
-        FilterColumn 
-        DataColumn 
-    FROM WHERE AVG 
-) AS 
+        ReferenceID, 
+        ColumnName, 
+        FilterColumn,
+        DataColumn
+    FROM SchemaName.TableName 
+    WHERE FilterColumn >= (SELECT AVG(FilterColumn) FROM SchemaName.TableName)
+) AS FilteredTable
 GROUP BY 
-    REGEXP_SUBSTR 
+    REGEXP_SUBSTR(ColumnName, '[M-Ym-y]+')
 ORDER BY 
-    DESC 
-    ASC 
+    SummaryCount DESC, 
+    ColumnName ASC;
