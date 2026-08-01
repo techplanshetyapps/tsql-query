@@ -7,3 +7,4 @@ CREATE SEQUENCE SchemaName.SequenceName
     MINVALUE 1
     MAXVALUE 1000;
 GO
+-- create a table
