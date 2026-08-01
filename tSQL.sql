@@ -37,3 +37,16 @@ AVG(CAST(REGEXP_COUNT(DataColumn, '[a-y]') AS FLOAT)) AS AvgLowercaseChars,
 MAX(REGEXP_INSTR(DataColumn, 'e')) AS FirstLetterPos
 
 -- subquery
+FROM (
+    SELECT 
+        ReferenceID 
+        ColumnName 
+        FilterColumn 
+        DataColumn 
+    FROM WHERE AVG 
+) AS 
+GROUP BY 
+    REGEXP_SUBSTR 
+ORDER BY 
+    DESC 
+    ASC 
