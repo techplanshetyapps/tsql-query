@@ -24,3 +24,6 @@ SET IDColumn = NEXT VALUE FOR SchemaName.SequenceName;
 GO
 
 -- expressions
+SELECT 
+    REGEXP_SUBSTR AS
+    COUNT AS
