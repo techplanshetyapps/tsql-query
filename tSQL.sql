@@ -30,11 +30,11 @@ SELECT
     
     COUNT(*) AS SummaryCount,
 
--- REGEXP_COUNT
-AVG(CAST(REGEXP_COUNT(DataColumn, '[a-y]') AS FLOAT)) AS AvgLowercaseChars,
+    -- REGEXP_COUNT
+    AVG(CAST(REGEXP_COUNT(DataColumn, '[a-y]') AS FLOAT)) AS AvgLowercaseChars,
 
--- REGEXP_INSRT
-MAX(REGEXP_INSTR(DataColumn, 'e')) AS FirstLetterPos
+    -- REGEXP_INSTR
+    MAX(REGEXP_INSTR(DataColumn, 'e')) AS FirstLetterPos
 
 -- subquery
 FROM (
