@@ -7,6 +7,7 @@ CREATE SEQUENCE SchemaName.SequenceName
     MINVALUE 1
     MAXVALUE 1000;
 GO
+
 -- create a table
 CREATE TABLE SchemaName.TableName (
     IDColumn INT DEFAULT (NEXT VALUE FOR SchemaName.SequenceName),
@@ -16,3 +17,5 @@ CREATE TABLE SchemaName.TableName (
     DataColumn VARCHAR(100)
 );
 GO
+
+-- sequence values 
