@@ -8,3 +8,11 @@ CREATE SEQUENCE SchemaName.SequenceName
     MAXVALUE 1000;
 GO
 -- create a table
+CREATE TABLE SchemaName.TableName (
+    IDColumn INT DEFAULT (NEXT VALUE FOR SchemaName.SequenceName),
+    ReferenceID INT,
+    ColumnName VARCHAR(100),
+    FilterColumn INT,
+    DataColumn VARCHAR(100)
+);
+GO
