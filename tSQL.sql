@@ -19,4 +19,6 @@ CREATE TABLE SchemaName.TableName (
 GO
 
 -- sequence values 
-UPDATE SET
+UPDATE SchemaName.TableName
+SET IDColumn = NEXT VALUE FOR SchemaName.SequenceName;
+GO
