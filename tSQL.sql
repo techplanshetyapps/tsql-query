@@ -25,7 +25,7 @@ GO
 
 -- expressions
 SELECT 
-
+    -- REGEXP_SUBSTR
     REGEXP_SUBSTR(ColumnName, '[M-Ym-y]+') AS ColumnName, 
     
     COUNT(*) AS SummaryCount,
