@@ -31,4 +31,4 @@ SELECT
     COUNT(*) AS SummaryCount,
 
 -- REGEXP_COUNT
-AVG CAST REGEXP_COUNT AS
+AVG(CAST(REGEXP_COUNT(DataColumn, '[a-y]') AS FLOAT)) AS AvgLowercaseChars,
